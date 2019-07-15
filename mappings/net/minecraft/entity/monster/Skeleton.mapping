@@ -1,1 +1,2 @@
 CLASS fr net/minecraft/entity/monster/Skeleton
+	FIELD a bow Liz;

@@ -6,4 +6,5 @@ CLASS nb net/minecraft/network/ClientPlayNetworkHandler
 	FIELD g level Lmm;
 	METHOD a (I)Lsn;
 		ARG 1 id
+	METHOD a send (Lki;)V
 	METHOD b sendPacket (Lki;)V

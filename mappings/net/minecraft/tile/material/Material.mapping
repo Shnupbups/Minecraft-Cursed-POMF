@@ -1,6 +1,7 @@
 CLASS ln net/minecraft/tile/material/Material
 	FIELD A COBWEB Lln;
 	FIELD B PISTON Lln;
+	FIELD C colour Ldx;
 	FIELD D burnable Z
 	FIELD G requiresTool Z
 	FIELD a AIR Lln;
@@ -17,16 +18,26 @@ CLASS ln net/minecraft/tile/material/Material
 	FIELD l WOOL Lln;
 	FIELD m FIRE Lln;
 	FIELD n SAND Lln;
+	FIELD o NON_SOLID Lln;
 	FIELD p GLASS Lln;
+	FIELD q TNT Lln;
+	FIELD r UNUSED Lln;
 	FIELD s ICE Lln;
+	FIELD t SNOW_LAYER Lln;
+	FIELD u SNOW_BLOCK Lln;
 	FIELD v CACTUS Lln;
 	FIELD w CLAY Lln;
+	FIELD x PUMPKIN Lln;
+	FIELD y PORTAL Lln;
 	FIELD z CAKE Lln;
+	METHOD <init> (Ldx;)V
+		ARG 1 colour
 	METHOD a isSolid ()Z
 	METHOD c blocksMovement ()Z
 	METHOD d isLiquid ()Z
 	METHOD e isBurnable ()Z
 	METHOD i doesRequireTool ()Z
 	METHOD k lightPassesThrough ()Lln;
+	METHOD l stopsPistons ()Lln;
 	METHOD n requiresTool ()Lln;
 	METHOD o burnable ()Lln;

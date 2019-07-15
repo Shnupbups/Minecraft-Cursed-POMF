@@ -1,2 +1,6 @@
 CLASS qw net/minecraft/entity/PrimedTnt
 	FIELD a fuse I
+	METHOD <init> (Lfd;DDD)V
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z

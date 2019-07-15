@@ -10,6 +10,10 @@ CLASS fd net/minecraft/level/Level
 	FIELD r rand Ljava/util/Random;
 	FIELD v cache Lcl;
 	FIELD x properties Lei;
+	METHOD <init> (Lwt;Ljava/lang/String;J)V
+		ARG 3 seed
+	METHOD <init> (Lwt;Ljava/lang/String;JLxa;)V
+		ARG 3 seed
 	METHOD <init> (Lwt;Ljava/lang/String;Lxa;J)V
 		ARG 4 seed
 	METHOD A canSkipNight ()Z
@@ -17,6 +21,10 @@ CLASS fd net/minecraft/level/Level
 	METHOD F resetWeather ()V
 	METHOD a getClosestPlayer (DDDD)Lgs;
 	METHOD a playSound (DDDLjava/lang/String;FF)V
+	METHOD a (IIIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD a setTileEntity (IIILow;)V
 	METHOD a setLevelTime (J)V
 	METHOD a setSpawnPosition (Lbr;)V
@@ -30,12 +38,25 @@ CLASS fd net/minecraft/level/Level
 		ARG 2 listener
 	METHOD b spawnEntity (Lsn;)Z
 	METHOD b getEntities (Lsn;Leq;)Ljava/util/List;
+	METHOD c (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+	METHOD d resetSpawnPosition ()V
 	METHOD d isAir (III)Z
 		ARG 1 x
 		ARG 2 y
 		ARG 3 z
 	METHOD d setTileMeta (IIII)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 a
+	METHOD e (IIII)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD e playLevelEvent (IIIII)V
+	METHOD e removeEntity (Lsn;)V
 	METHOD f isDaylight ()Z
 	METHOD f isChunkLoaded (II)Z
 		ARG 1 chunkX
@@ -43,6 +64,9 @@ CLASS fd net/minecraft/level/Level
 	METHOD f setTile (IIII)Z
 	METHOD h setRainGradient (F)V
 	METHOD i isTileLoaded (III)Z
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
 	METHOD n getLightLevel (III)I
 	METHOD p removeTileEntity (III)V
 	METHOD q disconnect ()V

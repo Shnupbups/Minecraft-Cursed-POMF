@@ -1,2 +1,3 @@
 CLASS net/minecraft/client/MinecraftApplet
 	FIELD b minecraft Lnet/minecraft/client/Minecraft;
+	METHOD start start ()V

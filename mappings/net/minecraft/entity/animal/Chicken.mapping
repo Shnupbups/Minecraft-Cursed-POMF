@@ -1,1 +1,2 @@
 CLASS ww net/minecraft/entity/animal/Chicken
+	FIELD i eggTimer I

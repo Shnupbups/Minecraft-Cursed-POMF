@@ -1,1 +1,2 @@
 CLASS um net/minecraft/tile/Cake
+	METHOD c eat (Lfd;IIILgs;)V

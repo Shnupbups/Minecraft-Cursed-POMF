@@ -1,5 +1,9 @@
 CLASS yw net/minecraft/item/food/Food
 	FIELD a healAmount I
 	FIELD bk wolfFood Z
+	METHOD <init> (IIZ)V
+		ARG 1 id
+		ARG 2 healAmount
+		ARG 3 wolfFood
 	METHOD l getHealAmount ()I
 	METHOD m canWolvesEat ()Z

@@ -10,3 +10,6 @@ CLASS is net/minecraft/recipe/ShapedRecipe
 		ARG 3 ingredients
 		ARG 4 output
 	METHOD a matchesSmall (Lmq;IIZ)Z
+		ARG 2 width
+		ARG 3 height
+		ARG 4 mirror

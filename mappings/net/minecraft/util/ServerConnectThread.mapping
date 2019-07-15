@@ -1,1 +1,5 @@
 CLASS wz net/minecraft/util/ServerConnectThread
+	FIELD a minecraft Lnet/minecraft/client/Minecraft;
+	FIELD d screen Lvx;
+	METHOD <init> (Lvx;Lnet/minecraft/client/Minecraft;Ljava/lang/String;I)V
+		ARG 1 screen

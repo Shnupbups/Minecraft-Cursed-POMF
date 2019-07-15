@@ -1,1 +1,6 @@
 CLASS cd net/minecraft/container/ChestContainer
+	FIELD a inventory Llw;
+	FIELD b rows I
+	METHOD <init> (Llw;Llw;)V
+		ARG 1 playerInventory
+		ARG 2 chestInventory

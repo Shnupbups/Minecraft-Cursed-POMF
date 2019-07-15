@@ -2,5 +2,11 @@ CLASS it net/minecraft/container/CraftingContainer
 	FIELD a inventory Lmq;
 	FIELD b result Llw;
 	FIELD c level Lfd;
+	FIELD h x I
+	FIELD i y I
+	FIELD j z I
 	METHOD <init> (Lix;Lfd;III)V
 		ARG 1 playerInventory
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z

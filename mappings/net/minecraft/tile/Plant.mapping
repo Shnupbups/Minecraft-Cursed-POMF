@@ -1,3 +1,5 @@
 CLASS wb net/minecraft/tile/Plant
+	METHOD <init> (II)V
+		ARG 1 id
 	METHOD d canPlantOnTopOf (I)Z
 		ARG 1 id

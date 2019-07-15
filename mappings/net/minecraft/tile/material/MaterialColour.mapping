@@ -16,3 +16,6 @@ CLASS dx net/minecraft/tile/material/MaterialColour
 	FIELD o WOOD Ldx;
 	FIELD p colour I
 	FIELD q id I
+	METHOD <init> (II)V
+		ARG 1 id
+		ARG 2 colour

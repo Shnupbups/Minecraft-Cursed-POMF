@@ -1,1 +1,3 @@
 CLASS xe net/minecraft/util/exception/SyntaxException
+	FIELD a column I
+	FIELD b line I

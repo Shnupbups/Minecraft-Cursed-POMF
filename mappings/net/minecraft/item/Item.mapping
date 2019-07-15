@@ -29,22 +29,36 @@ CLASS iz net/minecraft/item/Item
 	METHOD a split (I)Liz;
 		ARG 1 countToTake
 	METHOD a postMine (IIIILgs;)V
+		ARG 1 x
+		ARG 2 y
+		ARG 3 z
+		ARG 4 meta
 	METHOD a applyDamage (ILsn;)V
+		ARG 1 damage
 	METHOD a use (Lfd;Lgs;)Liz;
 	METHOD a inventoryTick (Lfd;Lsn;IZ)V
 	METHOD a useOnTile (Lgs;Lfd;IIII)Z
+		ARG 3 x
+		ARG 4 y
+		ARG 5 z
+		ARG 6 side
 	METHOD a isEqualIgnoreFlags (Liz;)Z
 	METHOD a interactWithEntity (Lls;)V
 	METHOD a postHit (Lls;Lgs;)V
 	METHOD a toTag (Lnu;)Lnu;
 		ARG 1 tag
 	METHOD b setDamage (I)V
+		ARG 1 damage
 	METHOD b onCrafted (Lfd;Lgs;)V
 	METHOD b copy (Liz;)Liz;
 	METHOD b fromTag (Lnu;)V
 		ARG 1 tag
 	METHOD b isEffectiveOn (Luu;)Z
+	METHOD c getMaxStackSize ()I
 	METHOD c isItemEqualIgnoreDamage (Liz;)Z
+	METHOD d canStack ()Z
+	METHOD e isDamageable ()Z
+	METHOD g isDamaged ()Z
 	METHOD i getDamage ()I
 	METHOD k copy ()Liz;
 	METHOD l getTranslationKey ()Ljava/lang/String;

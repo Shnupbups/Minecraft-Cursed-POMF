@@ -1,1 +1,3 @@
 CLASS ih net/minecraft/level/structure/LargeOak
+	FIELD b rand Ljava/util/Random;
+	FIELD c level Lfd;

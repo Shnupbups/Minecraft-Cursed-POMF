@@ -5,3 +5,7 @@ CLASS lx net/minecraft/entity/FishHook
 	FIELD f zTile I
 	FIELD g inTile I
 	FIELD h inGround Z
+	METHOD <init> (Lfd;DDD)V
+		ARG 2 x
+		ARG 4 y
+		ARG 6 z

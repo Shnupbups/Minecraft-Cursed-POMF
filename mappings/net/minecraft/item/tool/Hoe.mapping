@@ -1,1 +1,3 @@
 CLASS la net/minecraft/item/tool/Hoe
+	METHOD <init> (ILbu;)V
+		ARG 1 id

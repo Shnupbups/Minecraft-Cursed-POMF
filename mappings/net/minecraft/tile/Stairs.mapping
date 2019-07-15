@@ -1,1 +1,5 @@
 CLASS ss net/minecraft/tile/Stairs
+	FIELD a base Luu;
+	METHOD <init> (ILuu;)V
+		ARG 1 id
+		ARG 2 base

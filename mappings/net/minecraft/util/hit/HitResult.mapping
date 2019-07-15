@@ -3,3 +3,4 @@ CLASS vf net/minecraft/util/hit/HitResult
 	FIELD b x I
 	FIELD c y I
 	FIELD d z I
+	FIELD g entity Lsn;

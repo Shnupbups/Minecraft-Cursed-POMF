@@ -85,6 +85,7 @@ CLASS gm net/minecraft/item/ItemType
 	FIELD be record_cat Lgm;
 	FIELD bf id I
 	FIELD bg maxStackSize I
+	FIELD bh texturePos I
 	FIELD bk containerItemType Lgm;
 	FIELD bl translationKey Ljava/lang/String;
 	FIELD c byId [Lgm;
@@ -114,10 +115,17 @@ CLASS gm net/minecraft/item/ItemType
 	METHOD <init> (I)V
 		ARG 1 id
 	METHOD a getTranslationKey ()Ljava/lang/String;
+	METHOD a setTexturePos (II)Lgm;
+		ARG 1 u
+		ARG 2 v
 	METHOD a setContainerItem (Lgm;)Lgm;
 		ARG 1 itemType
 	METHOD a getTranslationKey (Liz;)Ljava/lang/String;
 	METHOD a postMine (Liz;IIIILls;)Z
+		ARG 2 x
+		ARG 3 y
+		ARG 4 z
+		ARG 5 meta
 	METHOD a use (Liz;Lfd;Lgs;)Liz;
 	METHOD a inventoryTick (Liz;Lfd;Lsn;IZ)V
 	METHOD a useOnTile (Liz;Lgs;Lfd;IIII)Z
@@ -127,11 +135,15 @@ CLASS gm net/minecraft/item/ItemType
 		ARG 4 x
 		ARG 5 y
 		ARG 6 z
+		ARG 7 side
 	METHOD a interactWithEntity (Liz;Lls;)V
 	METHOD a postHit (Liz;Lls;Lls;)Z
+	METHOD a getMiningSpeed (Liz;Luu;)F
 	METHOD a setName (Ljava/lang/String;)Lgm;
 	METHOD a isEffectiveOn (Luu;)Z
+	METHOD d getMaxStackSize ()I
 	METHOD d setMaxStackSize (I)Lgm;
+		ARG 1 size
 	METHOD e setDurability (I)Lgm;
 	METHOD f getNameColour (I)I
 	METHOD i getContainerItemType ()Lgm;

@@ -45,6 +45,8 @@ CLASS sn net/minecraft/entity/Entity
 	METHOD a setVelocity (DDD)V
 	METHOD a getBrightnessAtEyes (F)F
 	METHOD a movementInputToVelocity (FFF)V
+	METHOD a burn (I)V
+		ARG 1 damage
 	METHOD a dropItem (IIF)Lhl;
 	METHOD a shouldRenderFrom (Lbt;)Z
 	METHOD a onStruckByLightning (Lc;)V
@@ -54,6 +56,7 @@ CLASS sn net/minecraft/entity/Entity
 	METHOD a isInFluid (Lln;)Z
 	METHOD a readCustomDataFromTag (Lnu;)V
 		ARG 1 tag
+	METHOD a getBoundingBox (Lsn;)Leq;
 	METHOD a damage (Lsn;I)Z
 	METHOD ab destroy ()V
 	METHOD ad getDataTracker ()Lud;
@@ -70,14 +73,20 @@ CLASS sn net/minecraft/entity/Entity
 		ARG 1 tag
 	METHOD c setPositionAndAngles (DDDFF)V
 	METHOD c setRotation (FF)V
+		ARG 1 yaw
+		ARG 2 pitch
 	METHOD c onKilledOther (Lsn;I)V
 	METHOD d toTag (Lnu;)V
 	METHOD e setPosition (DDD)V
+		ARG 1 x
+		ARG 3 y
+		ARG 5 z
 	METHOD e fromTag (Lnu;)V
 	METHOD equals (Ljava/lang/Object;)Z
 		ARG 1 object
 	METHOD f distanceTo (Lsn;)F
 	METHOD g squaredDistanceTo (DDD)D
+	METHOD h_ exists ()Z
 	METHOD i startRiding (Lsn;)V
 	METHOD m getMountedHeightOffset ()D
 	METHOD n canClimb ()Z

@@ -1,2 +1,6 @@
 CLASS dq net/minecraft/item/tool/Tool
 	FIELD a toolMaterial Lbu;
+	FIELD bk effectiveTiles [Luu;
+	METHOD <init> (IILbu;[Luu;)V
+		ARG 1 id
+		ARG 4 effectiveTiles

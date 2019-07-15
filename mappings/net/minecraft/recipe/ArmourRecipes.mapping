@@ -1,2 +1,4 @@
 CLASS z net/minecraft/recipe/ArmourRecipes
+	FIELD a ARMOUR_PATTERN [[Ljava/lang/String;
+	FIELD b ARMOUR_MATERIALS [[Ljava/lang/Object;
 	METHOD a register (Lhk;)V
